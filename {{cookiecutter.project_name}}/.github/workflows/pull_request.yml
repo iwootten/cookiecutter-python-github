@@ -1,0 +1,17 @@
+name: CI
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: {{cookiecutter.python_version}}
+      - name: Install Pipenv
+        run: pip install pipenv==2020.11.15
+      - name: Install venv
+        run: make install
+      - name: Test
+        run: make test
