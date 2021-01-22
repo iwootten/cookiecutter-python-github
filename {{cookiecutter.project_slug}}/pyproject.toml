@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "{{ cookiecutter.version }}"
+description = ""
+readme = "README.md"
+authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
+
+[tool.poetry.dependencies]
+python = "^{{cookiecutter.python_version}}"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "20.8b1"
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

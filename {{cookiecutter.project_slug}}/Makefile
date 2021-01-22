@@ -6,11 +6,11 @@ init:
 	gh repo create
 	@echo "push with: git push -u origin main"
 install:
-	pipenv install --dev
+	poetry install
 lint:
-	pipenv run flake8
-	pipenv run black --check .
+	poetry run flake8
+	poetry run black --check .
 test: lint
-	pipenv run py.test
+	poetry run py.test
 format:
-	pipenv run black .
+	poetry run black .
