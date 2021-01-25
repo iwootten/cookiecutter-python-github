@@ -1,9 +1,12 @@
 {
 	"project_name": "someproject",
+	"project_short_description": "A project to",
 	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
 	"package_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-	"version": "0.1.0",
 	"python_version": "3.8.6",
+	"package_manager": ["pipenv", "poetry"],
+	"version": "0.1.0",
 	"full_name": "Ian Wootten",
-	"email": "hi@niftydigits.com"
+	"email": "hi@niftydigits.com",
+	"license": ["MIT", "BSD-3-Clause", "GPL-3.0-only", "Apache-2.0"]
 }

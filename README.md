@@ -1,5 +1,5 @@
-# Cookiecutter Template for Python, Poetry and Github Actions 
+# Cookiecutter Template for Python, Pipenv/Poetry and Github Actions 
 
-A simple cookiecutter template for Python using Poetry and Github Actions.
+A simple cookiecutter template for Python Pipenv/Poetry and Github Actions.
 
-A Poetry based version of the cookiecutter described in my blogpost at: https://www.ianwootten.co.uk/2021/01/07/bootstrapping-python-projects-with-cookiecutter-and-makefiles/
+See a full blog post at: https://www.ianwootten.co.uk/2021/01/25/building-a-cookiecutter-template-for-multiple-python-package-managers/

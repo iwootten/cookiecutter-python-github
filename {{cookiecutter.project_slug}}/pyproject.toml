@@ -4,6 +4,7 @@ version = "{{ cookiecutter.version }}"
 description = ""
 readme = "README.md"
 authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
+license = "{{ cookiecutter.license }}"
 
 [tool.poetry.dependencies]
 python = "^{{cookiecutter.python_version}}"

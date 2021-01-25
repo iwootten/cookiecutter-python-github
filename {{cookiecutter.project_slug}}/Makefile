@@ -6,11 +6,15 @@ init:
 	gh repo create
 	@echo "push with: git push -u origin main"
 install:
+	{%- if cookiecutter.package_manager == "poetry" %}
 	poetry install
+	{%- elif cookiecutter.package_manager == "pipenv" %}
+	pipenv install --dev
+	{%- endif %}
 lint:
-	poetry run flake8
-	poetry run black --check .
+	{{ cookiecutter.package_manager }} run flake8
+	{{ cookiecutter.package_manager }} run black --check .
 test: lint
-	poetry run py.test
+	{{ cookiecutter.package_manager }} run py.test
 format:
-	poetry run black .
+	{{ cookiecutter.package_manager }} run black .
